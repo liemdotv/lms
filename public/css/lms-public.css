@@ -1,0 +1,140 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.step{
+
+}
+.step li{
+    list-style: none;
+    float: left;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.h_step{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-top-left-radius: 15px;
+}
+.c_step{
+    background-color: #1c8bb5;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.step_active{
+    background-color: #12506b;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.new-loan-wizard{
+    border: 1px solid rgba(0,0,0,.1);
+    background: #fff;
+}
+.tb-title{
+    font-size: 15px;
+    margin: 15px 0 10px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1c8bb5;
+}
+.div-radio{
+    float: left;
+    width: 30%;
+}
+.new-loan-wizard input[type=radio]{
+}
+.table1 span{
+    position: relative;
+    top: -2px;
+}
+.table2 span{
+    position: relative;
+    top: -2px;
+}
+.table3 span{
+    position: relative;
+    top: -2px;
+}
+.div-radio{
+}
+.decription{
+    clear: both;
+    color: #777;
+    margin-top: 0px;
+}
+input{
+    padding-left: 5px;
+}
+.range-output{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.input_change{
+    margin-bottom: 15px;
+}
+#wap_lms{
+    margin-bottom: 20px;
+}
+.btn_lms{
+    text-align: center;
+    margin: 15px 0;
+}
+.table2,
+.table3{
+    display: none;
+}
+.table3{
+    padding-top: 20px;
+}
+.button_lms{
+    background: #1c8bb5;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 4px;
+}
+.selected-info table{
+    width: 100%;
+}
+.selected-info table td{
+    text-align: left;
+}
+.compare_result{
+    width: 100%;
+    clear: both;
+    position: relative;
+    top: 20px;
+    margin-bottom: 40px;
+}
+.compare_result table{
+    width: 100%
+}
+.compare_result table th{
+    background: #1c8bb5;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+#enquire_panel{
+    padding: 10px 0;
+    text-align: right;
+    background: #22b2ca;
+}
