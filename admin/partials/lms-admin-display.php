@@ -10,7 +10,7 @@
  * @package    Lms
  * @subpackage Lms/admin/partials
  */
-function lms_admin_display(){
+function lms_admin_display($post){
     ?>
  <div class="meta-row">
             <table>
@@ -18,13 +18,13 @@ function lms_admin_display(){
                 <tr>
                     <th>Property Type</th>
                     <td>
-                        <input type="checkbox" id="pro-hdd">HDD
+                        <input type="checkbox" id="pro-hdd" name="pro-hdd">HDD
                         <input type="checkbox" id="pro-private">Private
                         <input type="checkbox" id="pro-co">Commercial
                     </td>
                 <tr>
                     <th>Min Loan Amount:</th>
-                    <td><input type="text" id="min-loan-amount"></td>
+                    <td><input type="text" id="min-loan-amount" name="min-loan-amount"></td>
 
                 </tr>
                 <tr>
@@ -85,4 +85,5 @@ function lms_admin_display(){
 </div
     <?php
 }
+
 

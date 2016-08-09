@@ -157,7 +157,5 @@ class Lms_Admin {
 			)
 		);
 		register_taxonomy('Bank','lms_loan',$bank_arg);
-
 	}
-
 }

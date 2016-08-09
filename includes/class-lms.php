@@ -196,14 +196,25 @@ class Lms {
 		add_shortcode('LMS','lms_public_front_end');
 		function lms_public_front_end(){
 			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/lms-public-display.php';
+
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/lms-compare-result.php';
+
 		}
 
 		function lms_admin_front_end(){
 			add_meta_box('lms_box1','Properties','lms_admin_display','lms_loan','normal','high');
 		}
+		function lms_admin_front_end_save($post_id){
+			$min_loan_amount = sanitize_text_field( $_POST['min-loan-amount'] );
+			update_post_meta( $post_id, '_min-loan-amount', $min_loan_amount );
+			$pro_hdd = ($_POST['pro-hdd']);
+			update_post_meta($post_id,'_pro-hdd',$pro_hdd);
+		}
+		add_action( 'save_post', 'lms_admin_front_end_save' );
+
 
 		function my_taxonomy_term_image_js_dir_url( $option_name ) {
-			return plugin_dir_url( dirname( __FILE__ ) ) . '/admin/js';;
+			return plugin_dir_url( dirname( __FILE__ ) ) . '/admin/js';
 		}
 		add_filter( 'taxonomy-term-image-js-dir-url', 'my_taxonomy_term_image_js_dir_url' );
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/partials/lms-add-images-to-bank.php';
